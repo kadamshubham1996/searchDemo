@@ -1,0 +1,18 @@
+<table border="1" width="100%">
+  <tr>
+    <th>Id</th>
+    <th>Name</th>
+    <th>username</th>
+    <th>email</th>
+    <th>website</th>
+  </tr>
+  <tr *ngFor="let customer of data | search : name;let i = index">
+    <td>{{customer.id}}</td>
+    <td>{{customer.name}}</td>
+    <td>{{customer.username}}</td>
+    <td>{{customer.email}}</td>
+    <td>{{customer.website}}</td>
+  </tr>
+
+</table>
+
